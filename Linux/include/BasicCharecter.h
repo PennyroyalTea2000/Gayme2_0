@@ -5,9 +5,12 @@
 
 class BasicCharecter {
 protected:
-
-public:
+  string name;
+  unsigned count_cell;
+  unsigned count_money;
   
+public:
+
 };
 
 #endif /*_BASIC_CHARECTER_H_*/
