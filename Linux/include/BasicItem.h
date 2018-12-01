@@ -4,7 +4,7 @@
 #include "Header.h"
 
 class BasicItem {
-private:
+protected:
 	string name_item;
 	unsigned size_item;
 	unsigned price_buy;
