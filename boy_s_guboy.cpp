@@ -66,6 +66,7 @@ public:
 		cout << "Враг повержен" << endl;
 	}
 };
+
 int main() {
 	hero you;
 	you.basHP = 5;
