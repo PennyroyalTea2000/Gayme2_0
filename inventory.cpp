@@ -1,20 +1,24 @@
 #include <iostream>
 #include <locale.h>
 #include <string>
+
 using namespace std;
+
 class weapon {
 public:
-		string namew;
+	string namew;
 	int att;
 };
+
 class armor {
 public:
-		string namea;
+	string namea;
 	int hp;
 };
+
 class hero {
 public:
-		int MAXHP;
+	int MAXHP;
 	int basHP, basATT;
 	void wearW(weapon a) {
 		basATT += a.att;
@@ -30,9 +34,10 @@ public:
 		basHP -= a.hp;
 	}
 };
+
 class mob {
 public:
-		int mobATT, mobDEF;
+	int mobATT, mobDEF;
 	string namem;
 	void appear(mob a, hero you) {
 		int i, j;
@@ -48,16 +53,16 @@ public:
 				cin >> j;
 				switch (j) {
 				case 1:
-						a.mobDEF -= you.basATT;
-						cout << " âèçæa îò áîëè õï ìîáà ñòàíîâÿòñÿ = " << a.mobDEF << endl;
-						cout << " áðûçãàÿ ñëþíàìè âî âñå ñòîðîíû  êóñàåò çà æåïïó "<<  endl;
-						you.basHP -= a.mobATT;
-						cout << " âàøè õï îïóñêàþòñÿ äî "<<   you.basHP<<  endl;
-						break;
+					a.mobDEF -= you.basATT;
+					cout << " âèçæa îò áîëè õï ìîáà ñòàíîâÿòñÿ = " << a.mobDEF << endl;
+					cout << " áðûçãàÿ ñëþíàìè âî âñå ñòîðîíû  êóñàåò çà æåïïó "<<  endl;
+					you.basHP -= a.mobATT;
+					cout << " âàøè õï îïóñêàþòñÿ äî "<<   you.basHP<<  endl;
+					break;
 				case 2:
-							cout << "õîðîøî ïîñìåÿâøèñü âû âîññòàíàâëèâàåòå ïîëíîå õï";
-							you.basHP = you.MAXHP;
-							break;
+					cout << "õîðîøî ïîñìåÿâøèñü âû âîññòàíàâëèâàåòå ïîëíîå õï";
+					you.basHP = you.MAXHP;
+					break;
 				}
 			}
 		}
@@ -66,7 +71,6 @@ public:
 };
 
 int main() {
-	setlocale(LC_ALL, "Rus");
 	hero you;
 	you.basHP = 5;
 	you.basATT = 1;
