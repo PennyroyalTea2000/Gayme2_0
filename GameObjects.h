@@ -13,6 +13,4 @@ class Hero {
 
 };
 
-class 
-
 #endif /*_GAME_OBJECTS_H_*/
