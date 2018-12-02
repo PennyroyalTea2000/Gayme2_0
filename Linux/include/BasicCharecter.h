@@ -26,6 +26,7 @@ public:
   string  getName();
   Pattern getHP();
   Pettern getEnergy();
+  unsigned getMaxCell();
   unsigned getCurrentCell();
   unsigned getCountMoney();
 
