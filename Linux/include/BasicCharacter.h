@@ -1,5 +1,5 @@
-#ifndef _BASIC_CHARECTER_H_
-#define _BASIC_CHARECTER_H_
+#ifndef _BASIC_CHARACTER_H_
+#define _BASIC_CHARACTER_H_
 
 #include "Header.h"
 
@@ -10,7 +10,7 @@ struct Pattern {
   void normalization();
 };
 
-class BasicCharecter {
+class BasicCharacter {
 protected:
   string name;
   Pattern hp;
@@ -20,7 +20,7 @@ protected:
   unsigned count_money;
 
 public:
-  BasicCharecter(string name, Pattern hp, Pattern energy,
+  BasicCharacter(string name, Pattern hp, Pattern energy,
                  unsigned max_cell, unsigned current_cell,
                  unsigned count_money);
   string  getName();
@@ -36,4 +36,4 @@ public:
   void setCountMoney(unsigned new_count);
 };
 
-#endif /*_BASIC_CHARECTER_H_*/
+#endif /*_BASIC_CHARACTER_H_*/
