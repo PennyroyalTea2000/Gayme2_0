@@ -46,9 +46,19 @@ void BasicCharacter::setHP(unsigned new_max, unsigned new_regeneration) {
   hp.regeneration = new_regeneration;
 }
 
+void BasicCharacter::changeHP(unsigned change) {
+  hp.current += change;
+  hp.normalization();
+}
+
 void BasicCharacter::setEnergy(unsigned new_max, unsigned new_regeneration) {
   energy.max = new_max;
   energy.regeneration = new_regeneration;
+}
+
+void BasicCharacter::changeEnery(unsigned change) {
+  energy.current += change;
+  energy.normalization();
 }
 
 void BasicCharacter::setMaxCell(unsigned new_max) {

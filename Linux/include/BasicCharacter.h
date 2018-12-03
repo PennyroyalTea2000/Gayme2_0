@@ -31,7 +31,9 @@ public:
   unsigned getCountMoney();
 
   void setHP(unsigned new_max, unsigned new_regeneration);
+  void changeHP(unsigned change);
   void setEnergy(unsigned new_max, unsigned new_regeneration);
+  void changeEnergy(unsigned change);
   void setMaxCell(unsigned new_max);
   void setCountMoney(unsigned new_count);
 };
