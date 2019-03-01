@@ -3,6 +3,8 @@
 
 #inlcude "Header.h"
 
-
+/*
+	Some class BasicLocation
+*/
 
 #endif/*_BASIC_LOCATION_H_*/
